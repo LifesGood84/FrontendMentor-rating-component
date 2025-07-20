@@ -1,0 +1,408 @@
+/* *********************** */
+/* *** CSS RESET START *** */
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/* *** CSS RESET END *** */
+/* *********************** */
+
+@font-face {
+    font-display: swap;
+    font-family: 'Overpass';
+    font-style: normal;
+    font-weight: 400;
+    src: url('fonts/overpass-v18-latin-regular.woff2') format('woff2');
+}
+
+@font-face {
+    font-display: swap;
+    font-family: 'Overpass';
+    font-style: normal;
+    font-weight: 600;
+    src: url('fonts/overpass-v18-latin-600.woff2') format('woff2');
+}
+
+@font-face {
+    font-display: swap;
+    font-family: 'Overpass';
+    font-style: normal;
+    font-weight: 700;
+    src: url('fonts/overpass-v18-latin-700.woff2') format('woff2');
+}
+
+:root {
+    /* COLORS */
+    --c-white: hsl(0, 0%, 100%);
+    --c-black: hsl(0, 0%, 0%);
+    --c-grey-950: hsl(216, 12%, 8%);
+    --c-grey-900: hsl(213, 19%, 18%);
+    --c-grey-500: hsl(217, 12%, 63%);
+    --c-orange-500: hsl(25, 97%, 53%);
+    --c-first-color: hsl(215, 20%, 17%);
+    --c-second-color: hsl(216, 24%, 12%);
+     /* SPACING */
+    --spacing-0: 0px;
+    --spacing-100: 8px;
+    --spacing-200: 16px;
+    --spacing-300: 24px;
+    --spacing-400: 32px;
+    --spacing-500: 40px;
+    --spacing-1300: 104px;
+    --spacing-1700: 136px;
+    /* FONTS */
+    --text-1-font-family: 'Overpass', sans-serif;
+    --text-1-font-weight: 700;
+    --text-1-font-size: 1.75rem; /* 28px */
+    --text-1-line-height: 1.25;
+    --text-1-letter-spacing: 0px;
+
+    --text-2-font-family: 'Overpass', sans-serif;
+    --text-2-font-weight: 700;
+    --text-2-font-size: 1.5rem; /* 24px */
+    --text-2-line-height: 1.25;
+    --text-2-letter-spacing: 0px;
+
+    --text-3-font-family: 'Overpass', sans-serif;
+    --text-3-font-weight: 700;
+    --text-3-font-size: 1rem; /* 16px */
+    --text-3-line-height: 1.5;
+    --text-3-letter-spacing: 0.2px;
+
+    --text-4-font-family-bold: 'Overpass', sans-serif;
+    --text-4-font-weight-bold: 700;
+    --text-4-font-size-bold: 0.938rem; /* 15px */
+    --text-4-line-height-bold: 1.267;
+    --text-4-letter-spacing-bold: 2px;
+
+    --text-4-font-family-regular: 'Overpass', sans-serif;
+    --text-4-font-weight-regular: 400;
+    --text-4-font-size-regular: 0.938rem; /* 15px */
+    --text-4-line-height-regular: 1.6;
+    --text-4-letter-spacing-regular: 0px;
+
+    --text-5-font-family-bold: 'Overpass', sans-serif;
+    --text-5-font-weight-bold: 700;
+    --text-5-font-size-bold: 0.875rem; /* 14px */
+    --text-5-line-height-bold: 1.286;
+    --text-5-letter-spacing-bold: 1.87px;
+
+    --text-5-font-family-semibold: 'Overpass', sans-serif;
+    --text-5-font-weight-semibold: 600;
+    --text-5-font-size-semibold: 0.875rem; /* 14px */
+    --text-5-line-height-semibold: 1.714;
+    --text-5-letter-spacing-semibold: 0.17px;
+
+    --text-5-font-family-regular: 'Overpass', sans-serif;
+    --text-5-font-weight-regular: 400;
+    --text-5-font-size-regular: 0.875; /* 14px */
+    --text-5-line-height-regular: 1.57;
+    --text-5-letter-spacing-regular: 0px;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* height: 800px; */
+    height: clamp(41.6875rem, 32.09615384615385rem + 40.92307692307692vw, 50rem);
+    padding-left: var(--spacing-300);
+    padding-right: var(--spacing-300);
+    background-color: var(--c-grey-950);
+}
+
+.section-rating {
+    /* display: none; */
+    /* background-color: var(--c-grey-900); */
+    background: radial-gradient(circle, #232A34 0%, #181e27 100%);
+    max-width: 351px;
+    min-height: 312px;
+    border-radius: 18px;
+    /* 24px at 375 width and 32px at 700 width */
+    padding-block: clamp(24px, 0.9230769230769231rem + 2.4615384615384617vw, 34.5px);
+    /* 24px at 375 width and 30.5px at 700 width */
+    padding-left: clamp(24px, 0.9230769230769231rem + 2.4615384615384617vw, 30.5px);
+    padding-right: clamp(24px, 0.9230769230769231rem + 2.4615384615384617vw, 30.5px);
+}
+.icon-block {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.star-icon {
+    /* 40px at 375 width and 48px at 700 width */
+    width: clamp(40px, 1.9759615384615383rem + 2.769230769230769vw, 48px);
+    height: clamp(40px, 1.9759615384615383rem + 2.769230769230769vw, 48px);
+    background-color: var(--c-grey-900);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* 24px at 375 width and 32px at 700 width */
+    margin-block-end: clamp(24px, 0.9230769230769231rem + 2.4615384615384617vw, 32px);
+}
+h1 {
+    font-family: var(--text-1-font-family);
+    font-weight: var(--text-1-font-weight);
+    /* 24px at 375 width and 28px at 700px */
+    font-size: clamp(1.5rem, 1.2115384615384617rem + 1.2307692307692308vw, 1.75rem);
+    line-height: var(--text-1-line-height);
+    letter-spacing: var(--text-1-letter-spacing);
+    color: var(--c-white);
+}
+p {
+    font-family: var(--text-4-font-family-regular);
+    font-weight: var(--text-4-font-weight-regular);
+    /* 14px at 375 width and 15px at 700px */
+    font-size: clamp(0.875rem, 0.8028846153846154rem + 0.3076923076923077vw, 0.9375rem);;
+    line-height: var(--text-4-line-height-regular);
+    letter-spacing: var(--text-4-letter-spacing-regular);
+    color: var(--c-grey-500);
+    margin-block: var(--spacing-200);
+
+}
+.rating-icon {
+    font-family: var(--text-3-font-family);
+    font-weight: var(--text-3-font-weight);
+    /* 16px at 375 width and 14px at 700 width */
+    font-size: clamp(0.875rem, 0.7307692307692308rem + 0.6153846153846154vw, 1rem);
+    /* font-size: var(--text-3-font-size); */
+    line-height: var(--text-3-line-height);
+    letter-spacing: var(--text-3-letter-spacing);
+    color: var(--c-grey-500);
+    background-color: var(--c-grey-900);
+    /* 42px at 375 width and 51px at 700 width */
+    width: clamp(2.625rem, 1.9759615384615383rem + 2.769230769230769vw, 3.1875rem);
+    height: clamp(2.625rem, 1.9759615384615383rem + 2.769230769230769vw, 3.1875rem);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+.rating-icon:hover{
+    background-color: var(--c-orange-500);
+    color: var(--c-black)
+}
+.rating-icon:active{
+    background-color: var(--c-white);
+    color: var(--c-black);
+}
+.button-submit {
+    font-family: var(--text-5-font-family-bold);
+    font-weight: var(--text-5-font-weight-bold);
+    font-size: var(--text-5-font-size-bold);
+    /* line-height: var(--text-5-line-height-bold); */
+    /* line-height: 14px; */
+    height: 45px;
+    /* letter-spacing: var(--text-5-letter-spacing-bold); */
+    letter-spacing: clamp(0.010625rem, 0.23947115384615386rem + -0.5230769230769231vw, 0.116875rem);
+    color: var(--c-grey-950);
+    text-transform: uppercase;
+    padding-block: clamp(0.78125rem, 1.1177884615384615rem + -0.7692307692307693vw, 0.9375rem);
+
+    width: 100%;
+    background-color: var(--c-orange-500);
+    /* padding-block: var(--spacing-200); */
+    border: none;
+    border-radius: 22.5px;
+    /* 24px at 375 width and 32px at 700 width */
+    margin-block-start: clamp(24px, 0.9230769230769231rem + 2.4615384615384617vw, 32px);
+    display: flex;  
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+.button-submit:hover{
+    background-color: var(--c-white);
+}
+
+.thank-you-section{
+    /* width: 412px;
+    height: 416px; */
+    max-width: 340px;
+    max-height: 327px;
+    min-height: 288px;
+    background: radial-gradient(circle, #232A34 0%, #181e27 100%);
+
+    background: radial-gradient(circle, #232A34 0%, #181e27 100%);
+
+    border-radius: 18px;
+    /* 24px at 375 width and 32px at 700 width */
+    padding-block: clamp(36px, 1.6370192307692308rem + 2.6153846153846154vw, 44.5px);
+    /* 24px at 375 width and 30.5px at 700 width */
+    padding-left: clamp(24px, 0.6346153846153847rem + 3.692307692307692vw, 36px);
+    padding-right: clamp(24px, 0.6346153846153847rem + 3.692307692307692vw, 36px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+
+}
+.thank-you-section .submitted-rating-text {
+    /* display: block; */
+    color: var(--c-orange-500);
+    background-color: var(--c-grey-900);
+    padding: 6px 19.5px;
+
+    font-family: var(--text-4-font-family-regular);
+    font-weight: var(--text-4-font-weight-regular);
+    line-height: 20px;
+    letter-spacing: var(--text-4-letter-spacing-regular);
+    font-size: clamp(0.875rem, 0.8028846153846154rem + 0.3076923076923077vw, 0.9375rem);
+    border-radius: 22.5px;
+    margin-block: clamp(1.5rem, 0.9230769230769231rem + 2.4615384615384617vw, 2rem);
+}
+.thank-you-text{
+    font-family: var(--text-1-font-family);
+    font-weight: var(--text-1-font-weight);
+    line-height: var(--text-1-line-height);
+    letter-spacing: var(--text-1-letter-spacing);
+    font-size: clamp(1.5rem, 1.2115384615384617rem + 1.2307692307692308vw, 1.75rem);
+    color: var(--c-white);
+    margin: 0;
+}
+.appreciated-text{
+    text-align: center;
+    margin-bottom: 0;
+}
+
+@media (max-width: 400px) {
+    .thank-you-section img{
+        width: 144px;
+        height: 96px;
+    }
+}
+
+.hidden{
+    display: none;
+}
